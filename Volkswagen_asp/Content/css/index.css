@@ -1,0 +1,171 @@
+﻿@import 'font/opensans/opensans.css';
+
+html {
+	overflow: hidden;
+}
+
+body {
+	font-family: Open Sans Normal;
+		position: absolute;
+}
+
+header {
+	width:100%;
+	height: 150px;
+    top:0;
+	background-color:#353535
+}
+
+.base {
+	position:absolute;
+	width:80%;
+	left:10%;
+	background-color:#DDDDDD;
+}
+
+#logo {
+	position: absolute;
+    height: 130px;
+    width: 130px;
+	left: 20;
+	top: 10;
+}
+
+header nav {
+	position: relative;
+    height: 150px;
+	left: 200;
+}
+
+header nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Open Sans Normal;
+	font-size:30px;
+	display: inline-block;
+}
+
+section {
+	position: relative;	
+	min-width: 800px;
+}
+
+.splitter {
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+	background-color:white;
+}
+
+.title {
+	font-size: 44px;
+}
+
+.subtitle  {
+	font-size: 18;
+}
+
+.desc{
+	font-size: 13;
+}
+
+.img{
+	position: relative;
+	display: block;
+	height: 815px;
+	width: 100%;
+}
+
+.content .blocks {
+	position: absolute;
+	z-index: 4;
+	transform: scale(1);
+}
+
+.content .blocks .block {
+	width: 220;
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 10;
+	margin: 7 10 7 10;
+	box-shadow: 0 0 1px #555;
+	#border-radius: 10px;
+	background-color:white;
+}
+
+.content .blocks .block .title{
+	font-size: 16;
+	margin: 0 0 5 0;
+}
+
+.content .blocks .block .desc{
+	font-size: 10;
+}
+
+#s01 {
+	background: transparent url(../images/caravelle.jpg) no-repeat;
+	background-size: cover;
+
+}
+#s02 {
+	background: transparent url(../images/shatl1.jpg) no-repeat;
+	background-size: cover;
+}
+#s03 {
+	background: transparent url(../images/shatl2.jpg) no-repeat;
+	background-size: cover;
+}
+#s11 {
+	background: transparent url(../images/engine1.jpg) no-repeat;
+	background-size: cover;
+}
+#t0 .title {
+	position: absolute;
+	left: 70;
+	top: 120;
+	color:white;
+}
+
+#t0 .subtitle  {
+	position: absolute;
+	left: 180;
+	top: 180;
+	color:white;
+}
+
+#t0 .desc{
+	position: absolute;
+	top: 200;
+	right: 100;
+	width: 170;
+}
+#b1 {
+	left: 100;
+	top: 240;
+}
+
+#b2 {
+	top: 230;
+	right: 20;
+	width: 300;
+}
+
+.c {
+    height:49px;
+    padding: 50px 0;
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #FFFFFF; /* Цвет текста */
+}
+.c:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #353535, #656565); /* Градиент */
+    color: #FFFFFF;
+}
+
+
+.anim {
+	transition: all 1s ease-out 0s;
+}

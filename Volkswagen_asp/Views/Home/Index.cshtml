@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html id="b">
+<head>
+    <title>Volkswagen Caravelle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/css/index.css">
+</head>
+<script></script>
+<body class="anim">
+    <div class="base">
+        <header>
+            <img id="logo" src="/Content/images/logo1.png" />
+            <nav>
+                @Html.ActionLink("Новая Caravelle", "Index", "Home", null, new { @class = "c" })
+                @Html.ActionLink("Оставить заказ", "Order", "Home", null, new { @class = "c" })
+                @Html.ActionLink("Список заказов", "Engine", "Home", null, new { @class = "c" })
+            </nav>
+        </header>
+        <section>
+            <div class="img" id="s01"></div>
+        </section>
+        <div class="splitter"></div>
+        <section>
+            <div class="img" id="s02">
+                <div id="t0">
+                    <div class="title" id="t1">Идеальный шаттл.</div>
+                    <div class="subtitle" id="t1">Одно из многих определений новой Caravelle.</div>
+                </div>
+                <div class="content">
+                    <div class="blocks" id="b1">
+                        <div class="block bg">
+                            <div class="title">ESP – ЭТО СТАНДАРТ.</div>
+                            <div class="desc">Любая Caravelle нового поколения будет оснащена комплексом активной безопасности ESP+. Опционально предлагаются автоматическое управление дальним светом фар и другие ассистенты.</div>
+                        </div>
+                        <div class="block bg">
+                            <div class="title">СМАРТФОН<br> КАК ЧАСТЬ АВТОМОБИЛЯ.</div>
+                            <div class="desc">Лучшие из предлагаемых нами <br>инфо-медиасистем расширяют<br> свой функционал за счёт возможностей вашего смартфона или планшета.</div>
+                        </div><br>
+                        <div class="block bg">
+                            <div class="title">ПРЕВОСХОДНОЕ СОЧЕТАНИЕ.</div>
+                            <div class="desc">Полный привод 4MOTION и инноваци-<br>онная автоматическая коробка DSG.</div>
+                        </div>
+                        <div class="block bg">
+                            <div class="title">ДЕМОКРАТИЯ В ОТДЕЛЬНО ВЗЯТОМ АВТОМОБИЛЕ. </div>
+                            <div class="desc">В Caravelle нет привилегированных мест: на любом пассажиру будет комфортно.</div>
+                        </div><br>
+                        <div class="block bg">
+                            <div class="title">ЗНАЕТ ТОЛК В ВЫЕЗДАХ НА ПРИРОДУ. </div>
+                            <div class="desc">Только для Caravelle в этом классе предлагаются полный привод и механическая блокировка дифференциала.</div>
+                        </div>
+                        <div class="block bg">
+                            <div class="title">НОВЕЙШИЕ ИНФОМЕДИАСИСТЕМЫ. </div>
+                            <div class="desc">USB-подключения, раздача доступа в интернет по Wi-Fi, навигация и другие возможности.<br><br></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="splitter"></div>
+        <section>
+            <div class="img" id="s03">
+                <div class="content">
+                    <div class="blocks" id="b2">
+                        <div class="block bg">
+                            <div class="title">ПРОВЕРЕННОЕ КАЧЕСТВО VOLKSWAGEN. </div>
+                            <div class="desc">Долговечные и практичные материалы отделки.</div>
+                        </div>
+                        <div class="block bg">
+                            <div class="title">С ЗАБОТОЙ О ТОМ, КТО НАС БЕРЕЖЁТ.</div>
+                            <div class="desc">Комфорт и эргономика места водителя – ключевые факторы безопасности поездок.</div>
+                        </div><br>
+                        <div class="block bg">
+                            <div class="title">ЗНАЕТ СЕБЕ ЦЕНУ. </div>
+                            <div class="desc">Caravelle – представитель самого успешного в своём классе T-семейства Volkswagen.</div>
+                        </div>
+                        <div class="block bg">
+                            <div class="title">НАЙДЁТСЯ МЕСТЕЧКО. </div>
+                            <div class="desc">Система трансформации салона позволяет разместить в салоне не только пассажиров, но и негабаритный груз.</div>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="~/Content/js/core.js"></script>
+</html>
+

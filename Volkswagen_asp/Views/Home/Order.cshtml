@@ -1,0 +1,32 @@
+﻿@model Volkswagen_asp.Models.Client
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2>Order</h2>
+<div class="order">
+    @using (Html.BeginForm())
+    {
+        <fieldset>
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Name)</td>
+                    <td>@Html.EditorFor(m => m.Name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Surname)</td>
+                    <td>@Html.EditorFor(m => m.Surname)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Email)</td>
+                    <td>@Html.EditorFor(m => m.Email)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.PhoneNumber)</td>
+                    <td>@Html.EditorFor(m => m.PhoneNumber)</td>
+                </tr>
+            </table>
+            <button type="submit" id="submit">Отправить</button>
+        </fieldset>
+    }
+</div>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Volkswagen_asp.Models.Client>
+@{
+    ViewBag.Title = "Engine";
+}
+
+<html id="b">
+<head>
+    <title>Volkswagen Caravelle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/css/index.css">
+</head>
+<script></script>
+<body class="anim">
+    <div class="base">
+        <header>
+            <img id="logo" src="/Content/images/logo1.png" />
+            <nav>
+                @Html.ActionLink("Новая Caravelle", "Index", "Home", null, new { @class = "c" })
+                @Html.ActionLink("Оставить заказ", "Order", "Home", null, new { @class = "c" })
+                @Html.ActionLink("Список заказов", "Engine", "Home", null, new { @class = "c" })
+            </nav>
+        </header>
+        @foreach (Volkswagen_asp.Models.Client b in Model)
+        {
+            <table>
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    <td><p>@b.Surname</p></td>
+                    <td><p>@b.Email</p></td>
+                    <td><p>@b.PhoneNumber</p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+<script src="~/Content/js/core.js"></script>
+</html>
+
+
